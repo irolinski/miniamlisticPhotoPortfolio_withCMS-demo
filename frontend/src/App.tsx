@@ -31,10 +31,10 @@ export default function App() {
   useEffect(() => {
     (async () => {
       const seriesAPIRes = await fetch(
-        "https://photoportfolio-cms-demo.vercel.app/api/series"
+        "https://miniamlistic-photo-portfolio-with-cms-demo-czkay78p5.vercel.app/api/series"
       );
       const profileAPIRes = await fetch(
-        "https://photoportfolio-cms-demo.vercel.app/api/about-me"
+        "https://miniamlistic-photo-portfolio-with-cms-demo-czkay78p5.vercel.app/api/about-me"
       );
       const series = await seriesAPIRes.json();
       const profile = await profileAPIRes.json();

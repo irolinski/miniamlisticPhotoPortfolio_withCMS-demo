@@ -18,7 +18,7 @@ export default function AboutPage() {
   useEffect(() => {
     (async () => {
       const aboutmeAPIRes = await fetch(
-        "https://photoportfolio-cms-demo.vercel.app/api/about-me"
+        "https://miniamlistic-photo-portfolio-with-cms-demo-czkay78p5.vercel.app/api/about-me"
       );
       const data = await aboutmeAPIRes.json();
       console.log(data);

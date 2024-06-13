@@ -15,7 +15,7 @@ export default function StartPage({ instagramUrl, loadingState }: startPageTypes
   useEffect(() => {
     (async () => {
       const slideshowAPIRes = await fetch(
-        "https://photoportfolio-cms-demo.vercel.app/api/slideshow"
+        "https://miniamlistic-photo-portfolio-with-cms-demo-czkay78p5.vercel.app/api/slideshow"
       );
 
       const slideshow = await slideshowAPIRes.json();

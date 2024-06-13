@@ -49,7 +49,6 @@
 <script>
   const formInputDiv = document.getElementById("form-input-div");
 
-  console.log(document.querySelectorAll(".image-input").length);
   let inputNum = document.querySelectorAll(".image-input").length + 1;
 
   const removeImageInput = () => {
@@ -65,11 +64,9 @@
     inputNum++;
   };
 
-  window.onload = (evt) => {
-    if (!document.querySelector(".image-input")) {
-        addImageInput();
-    }
-  }
+  if (document.querySelectorAll(".image-input").length === 0) {
+      addImageInput();
+  };
 </script>
 
 <script>

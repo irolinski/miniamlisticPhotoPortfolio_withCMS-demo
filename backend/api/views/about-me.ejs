@@ -12,6 +12,7 @@
         novalidate
       >
         <div class="my-3 py-5 row" id="form-input-div">
+        <% if (abt.profile_picture_url !== undefined) { %>
           <div class="col-12 pt-3">
             <label for="profile_picture_url">Profile picture URL:</label>
             <input
@@ -21,6 +22,16 @@
               value="<%=abt.profile_picture_url%>"
               required
             />
+            <% } else { %>
+                        <div class="col-12 pt-3">
+            <label for="profile_picture_url">Profile picture URL:</label>
+            <input
+              name="profile_picture_url"
+              type="url"
+              class="form-control needs-validation"
+              required
+            />
+           <% } %>
           </div>
           <div class="col-12 pt-3">
             <label for="description">Description:</label>
