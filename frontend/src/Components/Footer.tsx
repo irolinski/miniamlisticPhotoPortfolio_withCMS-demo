@@ -9,22 +9,23 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Footer({ location, instagramUrl }: footerProps) {
-  const [startState, setStartState] = useState(false);
+
+export default function Footer({ location, instagramUrl}: footerProps) {
+  const [onStartPage, setOnStartPage] = useState(false);
 
   useEffect(() => {
-    location.includes("start") ? setStartState(true) : setStartState(false);
+    location.includes("start") ? setOnStartPage(true) : setOnStartPage(false);
   });
 
   return (
     <footer
       className={classNames(
-        startState ? "xl:hidden" : "",
+        onStartPage ? "xl:hidden" : "",
         "bg-transparent py-12 px-4 w-full bottom-0 fade-in-3s"
       )}
     >
       {instagramUrl !== "" && (
-        <a href={instagramUrl}  target="_blank">
+        <a href={instagramUrl} target="_blank">
           <img
             src="icons/instagram.svg"
             className="block h-8 w-8 mx-auto fade-in-3s"

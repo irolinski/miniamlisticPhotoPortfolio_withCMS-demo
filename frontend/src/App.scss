@@ -10,10 +10,10 @@
   padding: 5vw 10vw;
 }
 
-// footer{
-//   position: absolute !important;
-//   bottom: -10px !important ;
-// }
+.vertical-slide {
+  padding: 0 10vw 0 10vw;
+  margin: 0em; /* fixes the bug that causes border-like lines popping from the sides */
+}
 
 /* projects page */
 
@@ -148,6 +148,9 @@
   }
   .vertical {
     padding: 0 15vw 0 15vw;
+  }
+  .vertical-slide{
+    transform: translateY(-12vh);
   }
 }
 

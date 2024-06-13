@@ -24,9 +24,9 @@ export default function Navbar({ location }: navbarProps) {
   });
 
   const navigation = [
-    { name: "Start", href: `${baseUrl}/#/start`, current: startState },
-    { name: "Projekty", href: `${baseUrl}/#/projekty`, current: projectsState },
-    { name: "O mnie", href: `${baseUrl}/#/o-mnie`, current: aboutState },
+    { name: "Start", href: `${baseUrl}#/start`, current: startState },
+    { name: "Projekty", href: `${baseUrl}#/projekty`, current: projectsState },
+    { name: "O mnie", href: `${baseUrl}#/o-mnie`, current: aboutState },
   ];
 
   return (
