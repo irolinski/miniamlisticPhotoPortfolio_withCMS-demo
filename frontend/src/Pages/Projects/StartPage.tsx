@@ -38,12 +38,12 @@ export default function StartPage({
 
   const setVertical = () => {
     setCl(
-      "w-[800px] min-h-[20vh] xxs:min-h-[25vh] xs:min-h-[30vh] sm:min-h-[30vh] md:min-h-[45vh] vertical vertical-slide"
+      "w-auto min-h-[20vh] xxs:min-h-[25vh] xs:min-h-[30vh] sm:min-h-[30vh] vertical-slide translate-y-[2vh] md:translate-y-[1vh] scale-[0.8] md:scale-[1] xl:scale-[1.3]"
     );
   };
   const setHorizontal = () => {
     setCl(
-      "w-[800px] min-h-[20vh] xxs:min-h-[25vh] xs:min-h-[30vh] sm:min-h-[30vh] md:min-h-[45vh]"
+      "w-[800px] lg:scale-[1.2]"
     );
   };
 
@@ -65,9 +65,9 @@ export default function StartPage({
       </div>
     );
   return (
-    <>
+    <div className="start-page">
       <div
-        className="flex flex-wrap min-w-[100%] min-h-[100%] mx-auto justify-around sm:p-16 mb-36 mt-24 sm:mt-0 sm:mb-8 md:mb-0 lg:mb-8 lg:pt-[12.5vh] xl:flex-nowrap xl:py-[20vh]"
+        className="flex flex-wrap min-w-[100%] min-h-[80vh] mx-auto justify-around sm:p-16 mb-36 mt-16 sm:mt-0 sm:mb-8 md:mb-0 lg:mb-8 xxl:pt-[12.5vh] xl:flex-nowrap xl:py-[20vh]"
         onLoad={() => {
           if (!showStarted) {
             slide();
@@ -79,10 +79,10 @@ export default function StartPage({
           }
         }}
       >
-        <div className="start-menu fade-in-1s md:m-[20px] xl:m-0 xl:pr-16">
-          <div className="text-center">
+        <div className="start-menu fade-in-1s md:m-[20px] lg:mx-[80px] xl:m-0 lg:px-4 xl:pr-24">
+          <div className="text-center min-w-[300px]">
             <span className="font-header hover:text-gray-600/75 text-3xl xs:text-4xl hover:cursor-none">
-              Ola Kasprzykiewicz
+              Anna Nowak
             </span>
           </div>
           <div className="flex flex-row px-8 pt-4 xs:pt-8 justify-center xl:flex-col xl:text-center xl:pt-36">
@@ -109,7 +109,7 @@ export default function StartPage({
             )}
           </div>
         </div>
-        <div className="slideshow pt-16 px-8 sm:pt-16 md:pt-16 xl:pt-0">
+        <div className="slideshow px-8 sm:pt-16 md:pt-16 xl:pt-0 max-w-[694px] min-w-[100vw] lg:min-w-[694px]">
           {/* load all slideshow images - this prevents the slideshow from bugging out on low conncection speed */}
           {slides.map((src, i) => {
             return <img className="hidden" src={src} key={i} />;
@@ -118,7 +118,7 @@ export default function StartPage({
           {/* display only the one determined by slide function */}
           <div
             style={{ opacity: slideOpacity, transition: `opacity 0.7s` }}
-            className="min-h-[25vh] max-h-[vh] max-w-[800px]"
+            className=" min-h-[25vh] max-w-[800px] flex justify-center "
           >
             <img
               className={cl}
@@ -133,7 +133,7 @@ export default function StartPage({
         </div>
       </div>
       <Footer location={location} instagramUrl={instagramUrl} />
-    </>
+    </div>
   );
 }
 

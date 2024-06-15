@@ -1,5 +1,10 @@
 /* start page */
 
+.start-page {
+  footer {
+    margin-top: -10rem !important;
+  }
+}
 .start-image {
   width: 70vw;
   margin: auto;
@@ -10,9 +15,13 @@
   padding: 5vw 10vw;
 }
 
+.slide {
+  scale: 1.2;
+}
 .vertical-slide {
   padding: 0 10vw 0 10vw;
   margin: 0em; /* fixes the bug that causes border-like lines popping from the sides */
+  scale: 1.3;
 }
 
 /* projects page */
@@ -39,11 +48,11 @@
 
 /* carousel detail styling */
 
-.carousel{
-  button{
+.carousel {
+  button {
     transition: color 0.5s;
     &:hover,
-    &:focus{
+    &:focus {
       color: rgba(0, 0, 0, 0.5);
     }
   }
@@ -65,6 +74,12 @@
   margin: 0em; /* fixes the bug that causes border-like lines popping from the sides */
 }
 
+.vertical-slide {
+  padding: 0 10vw 0 10vw;
+  margin: 0em; /* fixes the bug that causes border-like lines popping from the sides */
+  max-height: 60vh !important;
+}
+
 /* about page (had to use css because of tailwind border bug) */
 
 .about-text > p {
@@ -75,37 +90,36 @@
   border-color: rgba(128, 128, 128, 0.142);
 }
 
-.fade-in-half-s{
+.fade-in-half-s {
   animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.fade-in-1s{
+.fade-in-1s {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.fade-in-2s{
+.fade-in-2s {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.fade-in-3s{
+.fade-in-3s {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -115,9 +129,25 @@
   .carousel-image {
     padding: 0;
   }
-  .vertical {
+  .vertical,
+  .vertical-slide {
     padding: 0 12vw 0 12vw;
   }
+}
+
+@media (min-width: 512px) {
+  .start-page {
+    footer {
+      margin-top: 3rem !important;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .vertical {
+    padding: 0 18vw 0 18vw;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -135,27 +165,26 @@
 }
 
 
-@media (min-width: 650px) {
-  .vertical {
-    padding: 0 18vw 0 18vw;
-  }
-}
 
 @media (min-width: 1024px) {
   .about-text > p {
     border-top: none !important;
     border-left: solid 1px #727579 !important;
   }
+
   .vertical {
     padding: 0 15vw 0 15vw;
   }
-  .vertical-slide{
+
+  .vertical-slide {
     transform: translateY(-12vh);
+    padding: 0 15vw 0 15vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .vertical {
+  .vertical,
+  .vertical-slide {
     padding: 0 12vw 0 12vw;
   }
 }
@@ -163,5 +192,11 @@
 @media (min-width: 1400px) {
   .vertical {
     padding: 0 10vw 0 10vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .vertical-slide {
+    padding: 0 11vw 0 11vw;
   }
 }

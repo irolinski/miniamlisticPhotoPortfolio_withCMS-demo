@@ -44,7 +44,7 @@ export default function Navbar({ location }: navbarProps) {
               <div>
                 <a href="/#/start">
                   <span className="font-header hover:text-gray-600/75 text-2xl lg:text-3xl hover:cursor-none">
-                    Ola Kasprzykiewicz
+                    Anna Nowak
                   </span>
                 </a>
               </div>
