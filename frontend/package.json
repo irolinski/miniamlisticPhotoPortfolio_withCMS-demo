@@ -2,7 +2,7 @@
   "name": "ola-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://irolinski.github.io/photoportfolio_cms-demo",
+  "homepage": "https://irolinski.github.io/miniamlisticPhotoPortfolio_withCMS-demo",
   "type": "module",
   "scripts": {
     "dev": "vite",

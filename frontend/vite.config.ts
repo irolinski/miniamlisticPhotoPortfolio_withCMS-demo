@@ -4,7 +4,7 @@ import tailwindcss from "tailwindcss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/photoportfolio_cms-demo/',
+  base: '/miniamlisticPhotoPortfolio_withCMS-demo/',
   plugins: [react()],
   css: {
     postcss: {

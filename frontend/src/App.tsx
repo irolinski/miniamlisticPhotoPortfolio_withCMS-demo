@@ -7,7 +7,7 @@ import ProjectPage from "./Pages/Projects/ProjectPage.tsx";
 import AboutPage from "./Pages/Projects/AboutPage.tsx";
 import { useEffect, useState } from "react";
 
-export const baseUrl: string = "/";
+export const baseUrl: string = "/miniamlisticPhotoPortfolio_withCMS-demo";
 export const apiUrl:string = "https://miniamlistic-photo-portfolio-with-cms-demo.vercel.app/api"
 
 export type seriesType = {

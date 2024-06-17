@@ -14,8 +14,6 @@ export default function StartPage({
   loadingState,
   location,
 }: startPageTypes) {
-  // const blankData: any[] | (() => any[]) = [];
-
   const [slideshowData, setSlideshowData] = useState<any[]>([]);
 
   useEffect(() => {
@@ -42,9 +40,7 @@ export default function StartPage({
     );
   };
   const setHorizontal = () => {
-    setCl(
-      "w-[800px] lg:scale-[1.2]"
-    );
+    setCl("w-[800px] lg:scale-[1.2]");
   };
 
   function slide() {
@@ -123,13 +119,20 @@ export default function StartPage({
             )}
           </div>
         </div>
-        <div className="slideshow px-8 sm:pt-16 md:pt-16 xl:pt-0 max-w-[694px] min-w-[100vw] lg:min-w-[694px]">
+        <div className="slideshow px-8 sm:pt-16 md:pt-16 xl:pt-0 max-w-[694px] min-w-[100%] lg:min-w-[694px]">
           {/* load all slideshow images - this prevents the slideshow from bugging out on low conncection speed */}
           {slides.map((src, i) => {
-            return <img className="hidden" src={src} key={i} onLoad={handleImageLoad} />;
+            return (
+              <img
+                className="hidden"
+                src={src}
+                key={i}
+                onLoad={handleImageLoad}
+              />
+            );
           })}
 
-          {/* display only the one determined by slide function */}
+          {/* display only the one determined by slide() function */}
           <div
             style={{ opacity: slideOpacity, transition: `opacity 0.9s` }}
             className=" min-h-[25vh] lg:max-w-[800px] flex justify-center "
