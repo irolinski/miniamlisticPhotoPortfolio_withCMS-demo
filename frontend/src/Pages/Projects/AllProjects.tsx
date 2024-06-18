@@ -37,7 +37,7 @@ export default function AllProjects({ imageData, instagramUrl, loadingState, loc
       <div className="flex flex-wrap fade-in-1s mx-auto justify-around md:p-16 pt-4">
         {imageData.map((p: seriesType, i: number) => (
           <div key={i} style={{ display: 'none' }}>
-            <img src={p.cover} onLoad={() => handleImageLoad} alt={p.name} />
+            <img src={p.cover} onLoad={() => handleImageLoad()} alt={p.name} />
           </div>
         ))}
         {imageData.map((p: seriesType, i: number) => (
