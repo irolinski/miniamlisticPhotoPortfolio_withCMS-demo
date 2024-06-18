@@ -52,7 +52,7 @@ export default function AboutPage({instagramUrl, location}: aboutProps) {
             </span>
             <span className="flex pt-2">
               <img
-                src="/icons/phone.svg"
+                src="icons/phone.svg"
                 className="block self-center h-5 w-5"
                 aria-hidden="true"
               />
@@ -60,7 +60,7 @@ export default function AboutPage({instagramUrl, location}: aboutProps) {
             </span>
             <span className="flex pt-1">
               <img
-                src="/icons/mail.svg"
+                src="icons/mail.svg"
                 className="block self-center h-5 w-5 translate-y-[1px]"
                 aria-hidden="true"
               />{" "}
