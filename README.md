@@ -10,7 +10,7 @@ minimalisticPhotographyPortfolio_1 with CMS - demo version
   <img height="350px" src="https://github.com/szczek/minimalisticPhotographyPortfolio_1/assets/66899019/7650228c-af6c-49c8-b5a4-c1dc7e998546" />
 
   <img height="350px" src="https://github.com/szczek/minimalisticPhotographyPortfolio_1/assets/66899019/76c5f753-4974-4201-96af-0864777ffa28" />
-  <img height="350px" src"https://github.com/irolinski/miniamlisticPhotoPortfolio_withCMS-demo/assets/66899019/5d295ec4-8403-4596-9fcc-9df3660a6467" />
+  <img height="350px" src="https://github.com/irolinski/miniamlisticPhotoPortfolio_withCMS-demo/assets/66899019/5d295ec4-8403-4596-9fcc-9df3660a6467" />
 </p>
 
 ## Try it out!
