@@ -24,11 +24,13 @@ Login: demo
 
 Password: demo1234
 
-## Back-end features
+## Back-end API features
 * Original Content/Database Management System that sends the data to the front-end via REST API written.
 * Full CRUD functionality.
 * Order your photo folders in any way you wish via the interactive table order feature. 
 * Built in node.js w/ Express & PostgreSQL.
+* bcrypt authentication.
+* Sleek interface made w/ Bootstrap.
 
 ## Front-end features
 * Original minimalistic design based on my client's guidelines.
