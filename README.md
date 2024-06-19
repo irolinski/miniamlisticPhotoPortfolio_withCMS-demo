@@ -15,7 +15,7 @@ minimalisticPhotographyPortfolio_1 with CMS - demo version
 
 ## Try it out!
 
-Front-end live demo build: irolinski.github.io/miniamlisticPhotoPortfolio_withCMS-demo/
+Front-end live demo build: https://irolinski.github.io/miniamlisticPhotoPortfolio_withCMS-demo
 
 CMS link: https://miniamlistic-photo-portfolio-with-cms-demo.vercel.app
 
