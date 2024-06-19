@@ -41,7 +41,7 @@ Password: demo1234
 ## Credits
 This software uses the following open source packages:
 
-On the back-end:
+On the back-end + API front:
 - Bootstrap
 - bcrypt
 - ejs-mate
