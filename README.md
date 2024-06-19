@@ -15,6 +15,8 @@ minimalisticPhotographyPortfolio_1 with CMS - demo version
 
 ## Try it out!
 
+CMS link: https://miniamlistic-photo-portfolio-with-cms-demo.vercel.app
+
 Login: demo
 
 Password: demo1234
