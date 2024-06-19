@@ -1,4 +1,3 @@
-# photoportfolio_cms-demo
 
 <h1 align="center">
 minimalisticPhotographyPortfolio_1 with CMS - demo version
