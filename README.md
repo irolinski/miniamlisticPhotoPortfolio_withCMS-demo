@@ -6,10 +6,10 @@ minimalisticPhotographyPortfolio_1 with CMS - demo version
 <h4 align="center">Photo portfolio react-based app designed and developed as a small commercial project.</h4>
 
 <p align="center"> 
-  <img height="350px" src="https://github.com/szczek/minimalisticPhotographyPortfolio_1/assets/66899019/7650228c-af6c-49c8-b5a4-c1dc7e998546" />
-
-  <img height="350px" src="https://github.com/szczek/minimalisticPhotographyPortfolio_1/assets/66899019/76c5f753-4974-4201-96af-0864777ffa28" />
+  <img height="350px" src="https://github.com/irolinski/miniamlisticPhotoPortfolio_withCMS-demo/assets/66899019/dc10eb64-8914-4a17-9474-7fd8dd204852" />
   
+  <img height="350px" src="https://github.com/irolinski/miniamlisticPhotoPortfolio_withCMS-demo/assets/66899019/bfa1550c-00f3-4e57-ae7c-5a10c0995139" />
+
   <img height="350px" src="https://github.com/irolinski/miniamlisticPhotoPortfolio_withCMS-demo/assets/66899019/8d0de5e7-27ef-4f1e-a017-c80a7e6a5260" />
 </p>
 
